@@ -1,0 +1,36 @@
+POST http://localhost:8081/eliminar/1
+Content-Type: application/x-www-form-urlencoded
+
+id=99&content=new-element
+
+###
+POST http://localhost:8081/editar/1
+Content-Type: application/json
+
+{
+  "nombre": "Andres",
+  "email": "and@gmail.com",
+  "password": "1234"
+}
+
+###
+GET http://localhost:8081/buscar/1
+Accept: application/json
+
+###
+GET http://localhost:8081/
+Accept: application/json
+
+###
+POST http://localhost:8081/guardar
+Content-Type: application/json
+
+{
+  "nombre": "Andres",
+  "email": "and@gmail.com",
+  "password": null
+}
+
+###
+
+
